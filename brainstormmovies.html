@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#141414" />
+    <meta name="description" content="Brainstorm Movies: A futuristic film streaming platform" />
+    <meta name="author" content="Brainstorm Collective" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <title>Brainstorm Movies</title>
+    <style>
+      /* Global Styles */
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #141414;
+        color: #fff;
+      }
+      img {
+        max-width: 100%;
+        display: block;
+      }
+
+      /* Header */
+      .header {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.7);
+        padding: 10px 20px;
+        z-index: 100;
+      }
+      .header img {
+        height: 40px;
+        object-fit: contain;
+      }
+      .header .nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .header .nav a {
+        text-decoration: none;
+        color: white;
+        padding: 0 15px;
+        font-size: 16px;
+      }
+      .header .nav a:hover {
+        text-decoration: underline;
+      }
+
+      /* Hero Section (Banner) */
+      .banner {
+        position: relative;
+        height: 70vh;
+        background-image: url('https://via.placeholder.com/1500x800');
+        background-size: cover;
+        background-position: center;
+        color: white;
+        padding: 60px 20px;
+        text-align: left;
+      }
+      .banner h1 {
+        font-size: 3.5rem;
+        font-weight: bold;
+        margin-bottom: 20px;
+      }
+      .banner p {
+        font-size: 1.2rem;
+        margin-bottom: 20px;
+        width: 70%;
+      }
+      .banner .buttons {
+        display: flex;
+        gap: 15px;
+      }
+      .banner .buttons button {
+        padding: 10px 20px;
+        background-color: #e50914;
+        border: none;
+        font-size: 16px;
+        cursor: pointer;
+        border-radius: 5px;
+      }
+      .banner .buttons button:hover {
+        background-color: #f40612;
+      }
+
+      /* Movie List (Carousel) */
+      .movie-row {
+        padding: 20px;
+        margin-top: 40px;
+      }
+      .movie-row h2 {
+        font-size: 1.8rem;
+        margin-bottom: 20px;
+      }
+      .movie-row .movies {
+        display: flex;
+        overflow-x: scroll;
+        gap: 20px;
+      }
+      .movie-row .movie {
+        width: 250px;
+        transition: transform 0.3s ease;
+        border-radius: 10px;
+      }
+      .movie-row .movie:hover {
+        transform: scale(1.05);
+      }
+      .movie-row .movie img {
+        width: 100%;
+        border-radius: 10px;
+        object-fit: cover;
+      }
+
+      /* Footer */
+      .footer {
+        background-color: #141414;
+        padding: 40px 20px;
+        text-align: center;
+      }
+      .footer p {
+        color: #fff;
+        font-size: 14px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="nav">
+        <img src="logo.svg" alt="Brainstorm Movies" />
+        <div>
+          <a href="#">Home</a>
+          <a href="#">TV Shows</a>
+          <a href="#">Movies</a>
+          <a href="#">New & Popular</a>
+          <a href="#">My List</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero Section (Banner) -->
+    <section class="banner">
+      <h1>Explore The Future of Cinema</h1>
+      <p>Watch the latest futuristic films powered by Brainstorm Movies.</p>
+      <div class="buttons">
+        <button>Play</button>
+        <button>More Info</button>
+      </div>
+    </section>
+
+    <!-- Movie List Section -->
+    <section class="movie-row">
+      <h2>Featured Movies</h2>
+      <div class="movies">
+        <div class="movie">
+          <img src="https://via.placeholder.com/250x375" alt="Movie Poster" />
+        </div>
+        <div class="movie">
+          <img src="https://via.placeholder.com/250x375" alt="Movie Poster" />
+        </div>
+        <div class="movie">
+          <img src="https://via.placeholder.com/250x375" alt="Movie Poster" />
+        </div>
+        <div class="movie">
+          <img src="https://via.placeholder.com/250x375" alt="Movie Poster" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p>&copy; 2025 Brainstorm Movies. All Rights Reserved.</p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#00ffcc" />
+    <meta
+      name="description"
+      content="Matrix: A powerful platform for futuristic technologies, digital transformation, and innovative solutions by Brainstorm 2070."
+    />
+    <meta name="keywords" content="Matrix, Brainstorm 2070, Futuristic Technologies, Innovation, Digital Transformation" />
+    <meta name="author" content="Brainstorm Collective" />
+    <!-- Favicon and Icons -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="logo192.png" />
+    <!-- Google Fonts: Roboto for sleek typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+    <!-- Custom Styles -->
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        background: #121212;
+        color: #f0f0f5;
+        font-family: 'Roboto', Arial, sans-serif;
+        overflow-x: hidden;
+      }
+
+      /* App Structure */
+      .App-Matrix {
+        min-height: 100vh;
+        padding: clamp(10px, 2vw, 20px);
+      }
+
+      /* Matrix Specific */
+      .App-header {
+        text-align: center;
+        margin-bottom: clamp(20px, 4vw, 40px);
+      }
+
+      .App-title-neon {
+        font-size: clamp(1.5rem, 5vw, 2.5rem);
+        color: #00ffcc;
+        text-shadow: 0 0 10px #00ffcc, 0 0 20px #ff007a;
+        margin: 10px 0;
+      }
+
+      .AppSubtitle-cyber {
+        font-size: clamp(0.8rem, 2.5vw, 1.2rem);
+        color: #f0f0f5;
+        opacity: 0.8;
+        margin: 0;
+      }
+
+      /* Matrix Content */
+      .App-main-grid {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: clamp(20px, 4vw, 40px);
+      }
+
+      h2 {
+        color: #00ffcc;
+        font-size: clamp(1.5rem, 4vw, 2rem);
+        text-shadow: 0 0 5px #00ffcc;
+        text-align: center;
+      }
+
+      .matrix-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(clamp(250px, 30vw, 300px), 1fr));
+        gap: clamp(10px, 2vw, 20px);
+      }
+
+      .matrix-item {
+        background: rgba(0, 255, 204, 0.1);
+        padding: clamp(10px, 2vw, 20px);
+        border-radius: 10px;
+        transition: transform 0.3s ease;
+        box-shadow: 0 0 10px rgba(0, 255, 204, 0.5);
+      }
+
+      .matrix-item:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 20px rgba(0, 255, 204, 0.8);
+      }
+
+      .matrix-item a {
+        color: #00ffcc;
+        text-decoration: none;
+        font-size: clamp(1rem, 2.5vw, 1.2rem);
+      }
+
+      .matrix-item a:hover {
+        color: #ff007a;
+      }
+
+      .matrix-item p {
+        font-size: clamp(0.8rem, 2vw, 1rem);
+        opacity: 0.8;
+        margin: 10px 0 0;
+      }
+    </style>
+    <title>Brainstorm 2070 - Matrix</title>
+  </head>
+  <body>
+    <div id="loading">
+      <span class="loader">Loading Matrix...</span>
+    </div>
+    <div class="App App-Matrix">
+      <header class="App-header">
+        <img src="logo.svg" class="App-logo App-logo-holo" alt="Brainstorm 2070s logo" />
+        <h1 class="App-title-neon">Matrix</h1>
+        <p class="AppSubtitle-cyber">
+          A visionary space for futuristic technologies, innovation, and digital transformation powered by Brainstorm 2070.
+        </p>
+      </header>
+
+      <main class="App-main-grid">
+        <h2>Explore the Matrix</h2>
+        <div class="matrix-list">
+          <div class="matrix-item">
+            <a href="ai.html">Artificial Intelligence</a>
+            <p>Shaping the future with cutting-edge AI solutions and research.</p>
+          </div>
+          <div class="matrix-item">
+            <a href="blockchain.html">Blockchain & Crypto</a>
+            <p>Innovating decentralized systems for secure and transparent transactions.</p>
+          </div>
+          <div class="matrix-item">
+            <a href="iot.html">Internet of Things (IoT)</a>
+            <p>Connecting devices and creating smarter, automated systems.</p>
+          </div>
+          <div class="matrix-item">
+            <a href="quantum.html">Quantum Computing</a>
+            <p>Unlocking the potential of quantum technology for unimaginable power.</p>
+          </div>
+          <div class="matrix-item">
+            <a href="cybersecurity.html">Cybersecurity</a>
+            <p>Protecting the digital realm with the most advanced security systems.</p>
+          </div>
+          <div class="matrix-item">
+            <a href="virtualreality.html">Virtual Reality (VR)</a>
+            <p>Transforming experiences through immersive virtual environments.</p>
+          </div>
+          <div class="matrix-item">
+            <a href="bigdata.html">Big Data & Analytics</a>
+            <p>Harnessing massive datasets to drive actionable insights and decisions.</p>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

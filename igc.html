@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#00ffcc" />
+    <meta
+      name="description"
+      content="IGC (Inspire Global Change) powered by Brainstorm 2070: A platform dedicated to global initiatives, social impact, and innovation for a better future."
+    />
+    <meta name="keywords" content="IGC, Inspire Global Change, Brainstorm, Global Impact, Social Innovation, Future" />
+    <meta name="author" content="Brainstorm Collective" />
+    <!-- Favicon and Icons -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="logo192.png" />
+    <!-- Google Fonts: Roboto for sleek typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+    <!-- Custom Styles -->
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        background: linear-gradient(135deg, #0a1422 0%, #1e2a44 100%);
+        color: #f0f0f5;
+        font-family: 'Roboto', Arial, sans-serif;
+        overflow-x: hidden;
+        line-height: 1.5;
+      }
+
+      /* App Structure */
+      .App-2070s {
+        min-height: 100vh;
+        padding: clamp(10px, 2vw, 20px);
+      }
+
+      /* IGC Specific */
+      .App-header {
+        text-align: center;
+        margin-bottom: clamp(20px, 4vw, 40px);
+      }
+
+      .App-title-neon {
+        font-size: clamp(1.5rem, 5vw, 2.5rem);
+        color: #00ffcc;
+        text-shadow: 0 0 10px #00ffcc, 0 0 20px #ff007a;
+        margin: 10px 0;
+      }
+
+      .AppSubtitle-cyber {
+        font-size: clamp(0.8rem, 2.5vw, 1.2rem);
+        color: #f0f0f5;
+        opacity: 0.8;
+        margin: 0;
+      }
+
+      /* Content Section */
+      .App-main-grid {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: clamp(20px, 4vw, 40px);
+      }
+
+      h2 {
+        color: #00ffcc;
+        font-size: clamp(1.5rem, 4vw, 2rem);
+        text-shadow: 0 0 5px #00ffcc;
+        text-align: center;
+      }
+
+      .page-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(clamp(250px, 30vw, 300px), 1fr));
+        gap: clamp(10px, 2vw, 20px);
+      }
+
+      .page-item {
+        background: rgba(0, 255, 204, 0.1);
+        padding: clamp(10px, 2vw, 20px);
+        border-radius: 10px;
+        transition: transform 0.3s ease;
+      }
+
+      .page-item:hover {
+        transform: scale(1.05);
+      }
+
+      .page-item a {
+        color: #00ffcc;
+        text-decoration: none;
+        font-size: clamp(1rem, 2.5vw, 1.2rem);
+      }
+
+      .page-item a:hover {
+        color: #ff007a;
+      }
+
+      .page-item p {
+        font-size: clamp(0.8rem, 2vw, 1rem);
+        opacity: 0.8;
+        margin: 10px 0 0;
+      }
+
+    </style>
+    <title>Brainstorm - IGC (Inspire Global Change)</title>
+  </head>
+  <body>
+    <div id="loading">
+      <span class="loader">Loading Brainstorm - IGC...</span>
+    </div>
+    <div class="App App-2070s">
+      <header class="App-header">
+        <img src="logo.svg" class="App-logo App-logo-holo" alt="Brainstorm 2070s logo" />
+        <h1 class="App-title-neon">Inspire Global Change (IGC)</h1>
+        <p class="AppSubtitle-cyber">
+          A platform for global impact, social innovation, and shaping a better tomorrow, powered by Brainstorm.
+        </p>
+      </header>
+
+      <main class="App-main-grid">
+        <h2>Our Global Initiatives</h2>
+        <div class="page-list">
+          <div class="page-item">
+            <a href="sustainable.html">Sustainability</a>
+            <p>Driving initiatives for a sustainable planet and greener future.</p>
+          </div>
+          <div class="page-item">
+            <a href="education.html">Global Education</a>
+            <p>Empowering minds through education and knowledge sharing.</p>
+          </div>
+          <div class="page-item">
+            <a href="health.html">Global Health</a>
+            <p>Improving global healthcare systems and accessibility.</p>
+          </div>
+          <div class="page-item">
+            <a href="equality.html">Social Equality</a>
+            <p>Promoting equality for all in society and beyond.</p>
+          </div>
+          <div class="page-item">
+            <a href="technology.html">Technological Innovation</a>
+            <p>Leveraging technology to enhance global change and transformation.</p>
+          </div>
+          <div class="page-item">
+            <a href="climateaction.html">Climate Action</a>
+            <p>Taking action against climate change for a healthier world.</p>
+          </div>
+          <div class="page-item">
+            <a href="empowerment.html">Empowerment</a>
+            <p>Enabling communities to grow and thrive in a modern world.</p>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

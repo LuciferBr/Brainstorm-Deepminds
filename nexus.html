@@ -6,9 +6,9 @@
     <meta name="theme-color" content="#00ffcc" />
     <meta
       name="description"
-      content="Brainstorm 2070: Your neural hub for managing staff, events, quantum ideas, and more."
+      content="Explore the Nexus, the brainstorming heart of Brainstorm 2070."
     />
-    <meta name="keywords" content="Brainstorm, neural hub, quantum ideas, futuristic management, gameplay, LuciferBOFL AI, IGC" />
+    <meta name="keywords" content="Brainstorm, Nexus, brainstorming, quantum ideas, futuristic management" />
     <meta name="author" content="Brainstorm Collective" />
     <!-- Favicon and Icons -->
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
@@ -88,8 +88,8 @@
         text-decoration: none;
         font-size: clamp(0.9rem, 2vw, 1.1rem);
         margin: 0 10px;
-        padding: 5px 0; /* Space for underline and upline */
-        position: relative; /* For pseudo-elements */
+        padding: 5px 0;
+        position: relative;
         transition: all 0.3s ease;
       }
       .App-nav-link::before { /* Upline */
@@ -100,7 +100,7 @@
         width: 100%;
         height: 2px;
         background: #00ffcc;
-        transform: scaleX(0); /* Hidden by default */
+        transform: scaleX(0);
         transform-origin: left;
         transition: transform 0.3s ease;
       }
@@ -112,7 +112,7 @@
         width: 100%;
         height: 2px;
         background: #00ffcc;
-        transform: scaleX(0); /* Hidden by default */
+        transform: scaleX(0);
         transform-origin: right;
         transition: transform 0.3s ease;
       }
@@ -122,7 +122,7 @@
       }
       .App-nav-link:hover::before,
       .App-nav-link:hover::after {
-        transform: scaleX(1); /* Show upline and underline on hover */
+        transform: scaleX(1);
       }
       .App-nav-link.active {
         color: #ff007a;
@@ -130,8 +130,8 @@
       }
       .App-nav-link.active::before,
       .App-nav-link.active::after {
-        background: #ff007a; /* Pink for active state */
-        transform: scaleX(1); /* Always visible for active tab */
+        background: #ff007a;
+        transform: scaleX(1);
       }
 
       /* Main Content */
@@ -146,32 +146,10 @@
         text-shadow: 0 0 5px #00ffcc;
         text-align: center;
       }
-      .page-list {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(clamp(200px, 30vw, 250px), 1fr));
-        gap: clamp(10px, 2vw, 20px);
-      }
-      .page-item {
-        background: rgba(0, 255, 204, 0.1);
-        padding: clamp(10px, 2vw, 20px);
-        border-radius: 10px;
-        transition: transform 0.3s ease;
-      }
-      .page-item:hover {
-        transform: scale(1.05);
-      }
-      .page-item a {
-        color: #00ffcc;
-        text-decoration: none;
-        font-size: clamp(1rem, 2.5vw, 1.2rem);
-      }
-      .page-item a:hover {
-        color: #ff007a;
-      }
-      .page-item p {
-        font-size: clamp(0.8rem, 2vw, 1rem);
-        opacity: 0.8;
-        margin: 10px 0 0;
+      p {
+        font-size: clamp(0.9rem, 2.5vw, 1.1rem);
+        line-height: 1.6;
+        text-align: center;
       }
 
       /* Animations */
@@ -195,7 +173,7 @@
         }
         .App-nav-link {
           margin: 5px 0;
-          padding: 8px 0; /* More padding for touch targets */
+          padding: 8px 0;
         }
         .App-logo-holo {
           width: clamp(50px, 15vw, 80px);
@@ -209,12 +187,9 @@
         .AppSubtitle-cyber {
           font-size: clamp(0.7rem, 3vw, 1rem);
         }
-        .page-item {
-          padding: 15px;
-        }
         .App-nav-link::before,
         .App-nav-link::after {
-          height: 1px; /* Thinner lines on small screens */
+          height: 1px;
         }
       }
 
@@ -227,18 +202,15 @@
         }
         .App-nav-link {
           font-size: 1.3rem;
-          padding: 10px 0; /* More padding for larger screens */
-        }
-        .page-item {
-          padding: 30px;
+          padding: 10px 0;
         }
         .App-nav-link::before,
         .App-nav-link::after {
-          height: 3px; /* Thicker lines for visibility */
+          height: 3px;
         }
       }
     </style>
-    <title>Brainstorm 2070</title>
+    <title>Brainstorm - Nexus</title>
   </head>
   <body>
     <div id="loading">
@@ -252,10 +224,10 @@
           Neural hub for staff, events, and quantum ideas | edition
         </p>
         <nav class="App-nav-cyber">
-          <a href="index.html" class="App-nav-link active">Home</a>
+          <a href="index.html" class="App-nav-link">Home</a>
           <a href="core.html" class="App-nav-link">Core</a>
           <a href="about.html" class="App-nav-link">About</a>
-          <a href="nexus.html" class="App-nav-link">Nexus</a>
+          <a href="nexus.html" class="App-nav-link active">Nexus</a>
           <a href="luciferbofl.html" class="App-nav-link">LuciferBOFL</a>
           <a href="igc.html" class="App-nav-link">IGC</a>
           <a href="matrix.html" class="App-nav-link">Matrix</a>
@@ -266,69 +238,11 @@
           <a href="events.html" class="App-nav-link">Events</a>
           <a href="tools.html" class="App-nav-link">Tools</a>
           <a href="ibo.html" class="App-nav-link">IBO</a>
-          <a href="brainstormmovies.html" class="App-nav-link">BM</a>
         </nav>
       </header>
       <main class="App-main-grid">
-        <h2>Welcome to Brainstorm</h2>
-        <div class="page-list">
-          <div class="page-item">
-            <a href="core.html">Core</a>
-            <p>The quantum hub for managing staff, events, and ideas.</p>
-          </div>
-          <div class="page-item">
-            <a href="about.html">About</a>
-            <p>Learn about Brainstorm and the Collective behind it.</p>
-          </div>
-          <div class="page-item">
-            <a href="nexus.html">Nexus</a>
-            <p>The brainstorming heart of Brainstorm.</p>
-          </div>
-          <div class="page-item">
-            <a href="luciferbofl.html">LuciferBOFL</a>
-            <p>Meet the AI assistant powering Brainstorm.</p>
-          </div>
-          <div class="page-item">
-            <a href="igc.html">IGC</a>
-            <p>Integrated Galactic Core for cosmic management.</p>
-          </div>
-          <div class="page-item">
-            <a href="matrix.html">Matrix</a>
-            <p>Gameplays and experiences in a universe.</p>
-          </div>
-          <div class="page-item">
-            <a href="grid.html">Grid</a>
-            <p>Contact the Brainstorm Collective.</p>
-          </div>
-          <div class="page-item">
-            <a href="portal.html">Portal</a>
-            <p>Provide feedback to shape Brainstorm’s future.</p>
-          </div>
-          <div class="page-item">
-            <a href="quantum.html">Quantum</a>
-            <p>Explore quantum computing applications.</p>
-          </div>
-          <div class="page-item">
-            <a href="staff.html">Staff</a>
-            <p>Manage your team with neural precision.</p>
-          </div>
-          <div class="page-item">
-            <a href="events.html">Events</a>
-            <p>Plan and track cosmic events.</p>
-          </div>
-          <div class="page-item">
-            <a href="tools.html">Tools</a>
-            <p>Futuristic tools for productivity and creativity.</p>
-          </div>
-          <div class="page-item">
-            <a href="ibo.html">IBO (Inspire Books Organization)</a>
-            <p>Discover a collection of inspirational books and resources.</p>
-          </div>
-          <div class="page-item">
-            <a href="brainstormmovies.html">BM (Brainstorm Movies)</a>
-            <p>Watch your passination here</p>
-          </div>
-        </div>
+        <h2>Nexus (Brainstorming)</h2>
+        <p>Connect and explore quantum ideas in the Nexus, the brainstorming heart of Brainstorm. This is where creativity meets innovation, allowing you to collaborate, ideate, and push the boundaries of futuristic thought within a dynamic, cosmic environment.</p>
       </main>
     </div>
   </body>
